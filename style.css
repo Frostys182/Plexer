@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1c1c1e;
+  font-family: 'Exo 2', Arial, sans-serif;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  max-width: 800px;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #5c85ff;
+  position: fixed;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%); /* Center the title horizontally */
+  text-align: center;
+}
+
+.countdown h2 {
+  font-size: 4rem;
+  margin-top: -20px;
+}
+
+.countdown p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+#timer {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.social-links {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.social-links a {
+  margin: 10px 0;
+}
+.social-links i:hover {
+  color: #5c85ff;
+}
+
+.social-links i {
+  color: white;          /* Set the icon color to white */
+  font-size: 30px;       /* Increase the icon size */
+  margin: 10px 0;        /* Add some margin for spacing */
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  #timer {
+    font-size: 1.5rem;
+  }
+
+  .social-links i {
+    font-size: 24px;     /* Adjust size for smaller screens */
+  }
+}
